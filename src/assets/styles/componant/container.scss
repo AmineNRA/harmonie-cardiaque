@@ -1,0 +1,15 @@
+@use '../mixin.scss';
+
+.container{
+    display: flex;
+
+    &__left{
+        width: 50%;
+    }
+    &__right{
+        width: 50%;
+    }
+    @include mixin.medium{
+        flex-direction: column;
+    }
+}

@@ -1,3 +1,44 @@
-* {
+@use './var.scss';
+@use './mixin.scss';
+
+
+  body{
+    font-family: var.$font;
+    background-image: url(../img/backgroundimg.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
+    @include mixin.medium{
+      height: 100%;
+    }
   }
+
+  h1{
+    color: var.$color-title;
+    text-align: center;
+    background-color: var.$background-title ;
+    display: table;
+    margin:  2rem auto;
+    padding: 1rem 3rem;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 35px;
+    @include mixin.medium{
+      font-size: 1.8rem;
+    }
+  }
+
+  .test{
+    display: flex;
+    align-items: center;
+  }
+  .secondes{
+    margin-left: 0.5rem;
+  }
+
+

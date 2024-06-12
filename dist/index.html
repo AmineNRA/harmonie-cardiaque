@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue sur Harmonie Cardiaque, votre destination privilégiée pour découvrir et pratiquer la cohérence cardiaque. Notre site vous propose une application intégrée pour vous guider dans votre pratique quotidienne, vous aidant à gérer le stress, améliorer votre bien-être et optimiser votre santé mentale et physique.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.d01dfbe0.css">
+    <script src="/index.c574a7e0.js" defer=""></script>
+    <title>Cohérance cardiaque</title>
+</head>
+
+<body>
+    <p class="text hidden"></p>
+    <div class="respire hidden">
+        <div class="circle">
+            <div class="circle__animation"></div>
+        </div>
+    </div>
+    <header>
+        <div class="title">
+            <h1>Harmonie Cardiaque</h1>
+        </div>
+    </header>
+    <main>
+        <div class="presentation block">
+            <p>Bienvenue sur Harmonie Cardiaque, votre destination privilégiée pour découvrir et pratiquer la cohérence
+                cardiaque.
+                Notre site vous propose une application intégrée pour vous guider dans votre pratique quotidienne,
+                vous aidant à gérer le stress, améliorer votre bien-être et optimiser votre santé mentale et physique.
+            </p>
+        </div>
+        <div class="container">
+            <div class="container__left">
+                <div class="exercice block">
+                    <h2>Personnaliser votre exercice</h2>
+                    <form method="get" class="exercice__form" id="form">
+                        <label for="range">
+                            <h3>Durée</h3>
+                        </label>
+                        <input name="range" type="range" value="3" min="1" max="5" step="1" id="range">
+                        <label for="duration"><input class="exercice__form--duration" type="number" name="duration" value="3" min="1" max="5" step="1" id="numberRange">min</label>
+                        <label for="respiration" class="exercice__form--respirationLabel">Temps de respiration
+                            (insparation/expiration)</label>
+                        <div class="test">
+                            <select name="respiration" id="respiration" class="exercice__form--respirationSelected">
+                                <option value="5/5">5/5</option>
+                                <option value="6/4">6/4</option>
+                                <option value="4/6">4/6</option>
+                                <option value="3/7">3/7</option>
+                            </select>
+                            <p class="secondes">secondes</p>
+                        </div>
+
+                        <h3>Animations</h3>
+                        <div class="exercice__form--animation">
+                            <label for="animation_one" class="exercice__form--animation-1">
+                                <input type="radio" name="animation">
+                                Numéro 1</label>
+                            <label for="animation_two">
+                                <input type="radio" name="animation">
+                                Numéro 2</label>
+                        </div>
+                        <h3>Bruitage</h3>
+                        <div class="exercice__form--bruitage">
+                            <label for="pluie" class="exercice__form--bruitage-1">
+                                <input type="checkbox" name="bruitage" id="pluie">
+                                Pluie</label>
+
+                            <label for="foret" class="exercice__form--bruitage-2">
+                                <input type="checkbox" name="bruitage" id="foret">
+                                Forêt</label>
+
+                            <label for="ocean">
+                                <input type="checkbox" name="bruitage" id="ocean">
+                                Océan</label>
+                        </div>
+                        <br>
+                        <button class="exercice__form--button" id="btn">Commencer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="container__right--astuce block">
+                    <p>Astuce : Vous pouvez quitter la cohérence à tout moment en
+                        cliquant sur échap, vous pouvez aussi couper le
+                        son avec la touche s</p>
+                </div>
+                <h2>Et si vous alliez plus loin ?</h2>
+                <div class="container__right--yoga block">
+                    <p>Le yoga est une pratique millénaire qui combine postures, respiration et méditation pour
+                        améliorer la
+                        flexibilité, la force et l'équilibre. Il réduit le stress,
+                        favorise la relaxation et améliore la clarté mentale. Pratiqué régulièrement,
+                        le yoga renforce le système immunitaire, améliore le sommeil et
+                        promeut un sentiment général de bien-être.</p>
+                </div>
+                <div class="container__right--video">
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/tP0Dl_hy8Y8?si=WMxvPGTG3ReA_WVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/VFygkgRujbo?si=zYXj0knh9wyr3ueV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                    <iframe width="200" height="150" src="https://www.youtube.com/embed/04_17KIf9ME?si=c1o6YSshvb47XKL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p> &#9400; 2024-AmineNRA</p>
+    </footer>
+</body>
+
+</html>

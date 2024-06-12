@@ -1,0 +1,66 @@
+@use '../mixin.scss';
+
+.respire {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mixin.medium{
+        height: 1367px;
+    }
+}
+
+.circle {
+    width: 140px;
+    height: 140px;
+    background: #EBACA2;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+
+    &__animation {
+        width: 140px;
+        height: 140px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        animation: scale-animation 10s ease-out infinite;
+
+        @include mixin.medium {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    @include mixin.medium {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.text {
+    position: absolute;
+    z-index: 1;
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    right: 44%;
+
+    @include mixin.medium {
+        font-size: 2rem;
+        right: 35%;
+        top: 40%;
+    }
+}

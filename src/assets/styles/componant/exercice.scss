@@ -1,0 +1,75 @@
+@use '../var.scss';
+@use '../mixin';
+
+.exercice{
+    width: 65%;
+    margin: 1rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    background-color: wheat;
+    h2{
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        &--duration{
+            margin-top: 0.75rem;
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+            width: 3.5rem;
+            height: 2rem;
+        }
+        &--barre{
+            display: block;
+            width: 70%;
+        }
+        &--respirationLabel, h3{
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin: 1rem 0;
+        }
+        &--respirationSelected{
+            width: 3.5rem;
+            height: 2rem;
+            font-size: 1.25rem;
+        }
+        &--animation{
+            &-1{
+                margin-right: 1rem;
+            }
+        }
+        &--bruitage{
+            &-1{
+                margin-right: 1rem;
+            }
+            &-2{
+                margin-right: 1rem;
+            }
+        }
+        &--button{
+            background-color: var.$background-title;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+            width: 12rem;
+            margin: 1rem auto 0rem auto;
+            border: 1px solid var.$background-title;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            &:hover{
+                color: var.$background-title;
+                background-color: white;
+            }
+        }
+
+    }
+    @include mixin.medium{
+        width: 90vw;
+        margin: .5rem;
+        padding: 0.5rem;
+    }
+}
