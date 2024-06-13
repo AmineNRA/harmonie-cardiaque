@@ -38,34 +38,38 @@
                 <div class="exercice block">
                     <h2>Personnaliser votre exercice</h2>
                     <form method="get" class="exercice__form" id="form">
-                        <label for="range">
-                            <h3>Durée</h3>
-                        </label>
-                        <input name="range" type="range" value="3" min="1" max="5" step="1" id="range">
-                        <label for="duration"><input class="exercice__form--duration" type="number" name="duration" value="3" min="1" max="5" step="1" id="numberRange">min</label>
-                        <label for="respiration" class="exercice__form--respirationLabel">Temps de respiration
-                            (insparation/expiration)</label>
-                        <div class="test">
-                            <select name="respiration" id="respiration" class="exercice__form--respirationSelected">
-                                <option value="5/5">5/5</option>
-                                <option value="6/4">6/4</option>
-                                <option value="4/6">4/6</option>
-                                <option value="3/7">3/7</option>
-                            </select>
-                            <p class="secondes">secondes</p>
+                        <div class="exercice__form--range">
+                            <label for="range">
+                                <span class="exercice__form--range">Durée</span>
+                            </label>
+                            <input name="range" type="range" value="3" min="1" max="5" step="1" id="range">
+                            <label for="duration"><input class="exercice__form--duration" type="number" name="duration" value="3" min="1" max="5" step="1" id="numberRange">min</label>
+                        </div>
+                        <div class="exercice__form--respiration">
+                            <label for="respiration" class="exercice__form--respirationLabel">Temps de respiration
+                                (insparation/expiration)</label>
+                            <div class="select--respiration">
+                                <select name="respiration" id="respiration" class="exercice__form--respirationSelected">
+                                    <option value="5/5">5/5</option>
+                                    <option value="6/4">6/4</option>
+                                    <option value="4/6">4/6</option>
+                                    <option value="3/7">3/7</option>
+                                </select>
+                                <p class="secondes">secondes</p>
+                            </div>
                         </div>
 
-                        <h3>Animations</h3>
                         <div class="exercice__form--animation">
+                        <h3>Animations</h3>
                             <label for="animation_one" class="exercice__form--animation-1">
-                                <input type="radio" name="animation">
+                                <input type="radio" name="animation" id="animation_one">
                                 Numéro 1</label>
                             <label for="animation_two">
-                                <input type="radio" name="animation">
+                                <input type="radio" name="animation" id="animation_two">
                                 Numéro 2</label>
                         </div>
-                        <h3>Bruitage</h3>
                         <div class="exercice__form--bruitage">
+                        <h3>Bruitage</h3>
                             <label for="pluie" class="exercice__form--bruitage-1">
                                 <input type="checkbox" name="bruitage" id="pluie">
                                 Pluie</label>

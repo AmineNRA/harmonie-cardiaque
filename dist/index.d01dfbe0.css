@@ -38,22 +38,15 @@ table {
 }
 
 body {
-  height: 100vh;
+  min-height: 100%;
   box-sizing: border-box;
   background-image: url("backgroundimg.212736c6.webp");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   flex-direction: column;
   justify-content: space-between;
   font-family: Roboto, sans-serif;
   display: flex;
-}
-
-@media screen and (max-width: 970px) {
-  body {
-    height: 100%;
-  }
 }
 
 h1 {
@@ -74,7 +67,7 @@ h1 {
   }
 }
 
-.test {
+.select--respiration {
   align-items: center;
   display: flex;
 }
@@ -112,29 +105,33 @@ h1 {
 }
 
 .exercice {
-  width: 65%;
-  background-color: wheat;
+  width: 50%;
+  background-color: #ebaca2;
   margin: 1rem 1rem 1rem 2rem;
   padding: 2rem;
 }
 
 .exercice h2 {
   text-align: center;
+  margin-bottom: 2rem;
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.exercice__form {
+.exercice__form, .exercice__form--respiration, .exercice__form--range {
   flex-direction: column;
   display: flex;
+}
+
+.exercice__form--respiration, .exercice__form--animation, .exercice__form--bruitage {
+  margin-top: 2rem;
 }
 
 .exercice__form--duration {
   width: 3.5rem;
   height: 2rem;
-  margin-top: .75rem;
-  margin-right: .5rem;
+  margin: .75rem .5rem 0 0;
   font-size: 1.25rem;
 }
 
@@ -174,6 +171,11 @@ h1 {
 .exercice__form--button:hover {
   color: #212e53;
   background-color: #fff;
+}
+
+.exercice__form--range {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 970px) {
@@ -246,13 +248,15 @@ footer {
 }
 
 .respire {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100%;
   background-color: #000000de;
   justify-content: center;
   align-items: center;
   display: flex;
   position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 970px) {
